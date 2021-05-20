@@ -6,6 +6,7 @@
     $br4 = $_GET['br4'];
 
     echo "$br1, $br2, $br3, $br4<br />";
+    echo "<br / >";
 
     function provera(){
         global $br1, $br2, $br3, $br4;
@@ -24,7 +25,7 @@
                 }   
             }
         }else{
-            echo "DIE";
+            die("Provera nije dobra");
         }
         if($pomocna1 >= $pomocna2){
             return $pomocna1;
