@@ -17,19 +17,23 @@ Npr ako je broj 11, onda je celija u drugom redu i 3.koloni obojena crno.
             border: 1px solid black;
             width: 30px;
             height: 30px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 <?php
     $a = mt_rand(1,64);
+    $b = mt_rand(0,255);
+    $c = mt_rand(0,255);
+    $d = mt_rand(0,255);
 
     echo "<table>";
     for($i = 0; $i <= 7; $i++){
         echo "<tr>";
         for($j=1; $j<=8; $j++){
             if($a == ($i*8+$j)){
-                echo "<td style='background:black;color:white'>".($i*8+$j)."</td>";
+                echo "<td style='background:rgb($b,$c,$d);color:white'>".($i*8+$j)."</td>";
             }else{
                 echo "<td></td>";
             }
