@@ -39,7 +39,7 @@
 
    echo "<br>";
    $y = array_filter($x, function($najveca_godina_staza){
-        global $p_max;
+       global $p_max;
         if($najveca_godina_staza['godine_staza'] == $p_max)
             return true;
         else
