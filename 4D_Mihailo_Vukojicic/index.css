@@ -1,0 +1,6 @@
+div{  color:red; }
+p.tekst{  text-align:center; }
+p.tekst.manji{  font-size: 80%; }
+div.veci{ font-size:30px; }
+div.veci p{   text-align: left; }
+div.veci p span{   text-decoration: underline; }

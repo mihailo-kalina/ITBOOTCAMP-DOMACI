@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Gochi Hand", cursive;
+        background-image: linear-gradient(#009ac7, 50%, white);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .section {
+        height: 100%;
+      }
+
+      .s1 {
+        background: url(cover1.jpg) no-repeat center / cover;
+        position: relative;
+        box-shadow: 0 0 20px 10px #015fa4;
+      }
+      .header {
+        color: white;
+        position: absolute;
+        text-align: center;
+        right: 10px;
+        width: 35%;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      .bio {
+        font-size: 40px;
+      }
+      .author {
+        margin-bottom: 10px;
+      }
+      .hello {
+        font-size: 40px;
+      }
+
+      .name {
+        font-size: 70px;
+      }
+      .s2,
+      .s3,
+      .s4 {
+        height: auto;
+        position: relative;
+        text-align: center;
+      }
+      .abilities,
+      .contact {
+        width: 70%;
+        margin: 0 auto;
+        top: 10px;
+        font-size: 75px;
+      }
+
+      #hockey1,
+      #teaching1,
+      #traveling1 {
+        border: 1px solid black;
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: all 2s ease;
+      }
+
+      #hockey1:hover,
+      #teaching1:hover,
+      #traveling1:hover {
+        cursor: zoom-in;
+        height: auto;
+        width: 400px;
+        border-radius: 0;
+      }
+
+      .left,
+      .right {
+        display: inline-block;
+        font-size: 35px;
+        width: 50%;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+      }
+      .hockey,
+      .teaching,
+      .traveling {
+        margin-top: 15px;
+        width: 100%;
+        display: inline-block;
+      }
+      .abc {
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+
+      .projects {
+        width: 70%;
+        font-size: 75px;
+        top: 25px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+      .projects p{
+          height: 80px;
+      }
+      .picture img{
+          width: 100%;
+      }
+      .design, .table {
+        font-size: 25px;
+        width: 40%;
+        top: 20px;
+        display: inline-block;
+      }
+      .table{
+          float: right;
+      }
+      .s3 .abc{
+          padding-bottom: 0;
+      }
+      h5{
+          margin: 10px;
+      }
+      .s4 {
+        background-color: #98d2e5;
+      }
+      .s4 h4 {
+        font-size: 30px;
+        margin: 30px auto;
+      }
+      .contact_form form {
+        font-size: 30px;
+      }
+      .contact_form form div {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .fields {
+        width: 60%;
+        border-radius: 30px;
+        padding: 10px 15px;
+        font-size: 20px;
+        border: 1px solid black;
+      }
+      textarea.fields {
+        width: 60.5%;
+        margin-top: 10px;
+        min-height: 50px;
+        height: 150px;
+        resize: none;
+      }
+      .button .fields {
+        width: 20%;
+        background-color: #004495;
+        color: white;
+      }
+      .fields:focus {
+        outline: none;
+        background-color: #7ccee5;
+        color: white;
+      }
+      .social_media img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .social_media a:first-child img {
+        width: 60px;
+      }
+      .media {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section s1">
+      <div class="header">
+        <div class="author hello">Hello, I'm</div>
+        <div class="author name">Mihailo Vukojicic</div>
+        <div class="bio">
+          Web developer, 32 years old based in Belgrade, I have a passion for
+          web design
+        </div>
+      </div>
+    </div>
+
+    <div class="section s2">
+      <div class="abilities">
+        <h3 class="abc">Something about me...</h3>
+
+        <div class="hockey">
+          <div class="left">
+            <img id="hockey1" src="hokej.jpg" alt="hockey" />
+          </div>
+          <div class="right"><p>My favorite sport is Ice Hockey</p></div>
+        </div>
+
+        <div class="teaching">
+          <div class="left">
+            <p>Couple of years I use to teach English in China</p>
+          </div>
+          <div class="right">
+            <img id="teaching1" src="teaching.jpg" alt="teaching" />
+          </div>
+        </div>
+
+        <div class="traveling">
+          <div class="left">
+            <img id="traveling1" srcset="traveling.jpg" alt="travleing" />
+          </div>
+          <div class="right">
+            <p>I love to travel and discover new places</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section s3">
+      <div class="projects">
+        <h3 class="abc">What I can do.</h3>
+        <h5>Design what you want.</h5>
+        <div class="design">
+          <p>I like to keep it simple, for both customers and users.</p>
+          <div class="picture"><img id="form" src="payment.jpg" alt="picture"/></div>
+        </div>
+        <div class="table">
+            <p>Everything has to be well organized.</p>
+            <div class="picture">
+                <img id="table" src="tabela.jpg" alt="picture"/>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section s4">
+      <div class="contact">
+        <h3 class="abc">Get in touch</h3>
+        <div class="contact_form">
+          <form>
+            <div class="fullname">
+              <input class="fields" type="text" placeholder="Name" />
+            </div>
+            <div class="email">
+              <input class="fields" type="email" placeholder="Email" />
+            </div>
+            <div class="subject">
+              <input class="fields" type="text" placeholder="Subject" />
+            </div>
+            <div class="message">
+              <textarea class="fields" placeholder="Message"></textarea>
+            </div>
+            <div class="button">
+              <input class="fields" type="button" value="Send" />
+            </div>
+          </form>
+        </div>
+        <div class="social_media">
+          <h4>I AM SOCIAL</h4>
+          <div class="media">
+            <a href="https://www.instagram.com/"
+              ><img
+                src="https://i.pinimg.com/originals/72/a3/d9/72a3d9408d41335f39e9f014dc35cf44.jpg"
+                alt="Instagram"
+            /></a>
+            <a href="https://sr-rs.facebook.com/"
+              ><img
+                src="https://i.pinimg.com/736x/ac/57/3b/ac573b439cde3dec8ca1c6739ae7f628.jpg"
+                alt="Facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

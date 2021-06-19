@@ -1,0 +1,55 @@
+form{
+    padding: 20px;
+}
+.pol{
+    color: blue;
+}
+.pol span{
+    color:black;
+    font-style: italic;
+}
+.form-submit-button {
+    background: #B9DFFF;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+    padding: 10px;
+}
+#datum{
+    color: darkgreen;
+}
+    
+.form-submit-button:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+}
+.lista{
+    color: rgb(228, 70, 13);
+}
+.sport{
+    background-color: rgb(32, 127, 172);
+    width: fit-content;
+    height: fit-content;
+}
+.sportista{
+    background-color: darkorchid;
+    width: fit-content;
+    height: fit-content;
+}
+#checkbox{
+    background-color: goldenrod;
+    width: fit-content;
+    height: fit-content;
+}
+#slika{
+    color: blue;
+}
+#email{
+    color: rgb(250, 0, 0);
+}

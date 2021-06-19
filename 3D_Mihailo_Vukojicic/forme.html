@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="Ime podaci">
+        <label>Ime:</label><br /><input type="text" name="Ime" />
+      </div>
+      <div class="Prezime podaci">
+        <label>Prezime:</label><br /><input type="text" name="Prezime" />
+      </div>
+      <div class="Password podaci">
+        <label>Password:</label><br /><input type="password" name="Password" />
+      </div>
+
+      <p class="pol">
+        <label>Odaberite vas pol:</label><br />
+        <span>
+          <input type="radio" name="Pol" value="M" /><label>Muski</label><br />
+          <input type="radio" name="Pol" value="Z" /><label>Zenski</label>
+        </span>
+      </p>
+
+      <div id="datum">
+        <label>Unesite datum rodjenja:</label>
+        <input type="date" name="datum" name="datum" />
+      </div>
+
+      <p class="sport lista">
+        <label for="sport">Odaberite vas sport:</label>
+        <select id="sport" name="sport">
+          <option value="Fudbal">Fudbal</option>
+          <option value="Kosarka">Kosarka</option>
+          <option value="Tenis">Tenis</option>
+          <option value="Hokej">Hokej</option>
+        </select>
+      </p>
+
+      <p class="sportista lista">
+        <label for="sportista">Odaberite vaseg omiljenog sportistu:</label>
+        <select id="sportista" name="sportista">
+          <optgroup label="Fudbal">
+            <option value="Ronaldinjo">Ronaldinjo</option>
+            <option value="Messi">Messi</option>
+            <option value="Zidane">Zidane</option>
+          </optgroup>
+          <optgroup label="Kosarka">
+            <option value="Jokic">Jokic</option>
+            <option value="Bogdanovic">Bogdanovic</option>
+            <option value="Pokusevski">Pokusevski</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p id="checkbox">
+        <label>Stiklirajte vase omiljene domace klubove:</label>
+        <input type="checkbox" name="klub1" value="Partizan" /><label
+          >Partizan</label
+        >
+        <input type="checkbox" name="klub2" value="Zvezda" /><label
+          >Zvezda</label
+        >
+        <input type="checkbox" name="klub3" value="Vojvodina" /><label
+          >Vojvodina</label
+        >
+        <input type="checkbox" name="klub4" value="Radnicki NIs" /><label
+          >Radnicki Nis</label
+        >
+      </p>
+
+      <p id="slika">
+        <label>Uploadujte vasu sliku:</label>
+        <input type="file" name="slika" />
+      </p>
+
+      <p id="email"><label>email:</label><input type="email" name="email" /></p>
+
+      <p>
+        <textarea
+          placeholder="Napisite nesto o sebi..."
+          rows="3"
+          cols="30"
+          name="opisite sebe"
+        ></textarea>
+      </p>
+
+      <div id="submit">
+        <input
+          class="form-submit-button"
+          type="submit"
+          value="Snimi"
+          formaction="https://www.youtube.com/watch?v=kE7D7qFayVg&t=89s"
+          name="submit"
+        />
+      </div>
+    </form>
+  </body>
+</html>

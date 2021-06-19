@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style-type: none;
+            border: 1px solid blue;
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background: yellow;
+            color: red;
+            cursor: pointer;
+            padding: 0;
+            display: inline-block;
+        }
+        ul{
+            padding: 0;
+        }
+
+        li.podmeni{
+            width: 100px;
+            position: relative;
+        }
+        .podmeni ul{
+            display: none;
+            position: absolute;
+            top: -1px;
+            left: 100px;
+        }
+        li:hover ul{
+            display: inline-table;
+            top: 100%;
+            left: 0;
+           
+
+    
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="podmeni">
+            <span>Stavka 1</span>
+                <ul>
+                    <li>Podstavka1</li>
+                 </ul>
+        </li>
+        <li class="podmeni">
+            <span>Stavka 2</span>
+                <ul>
+                    <li>Podstavka2</li>
+                </ul>
+        </li>
+        <li class="podmeni">
+            <span>Stavka3</span>
+                <ul>
+                    <li>Podstavka3</li>
+                </ul>
+        </li>
+        <li class="podmeni">
+            <span>Stavka 4</span>
+                <ul>
+                    <li>Podstavka4</li>
+                </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>

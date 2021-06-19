@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+        form{
+            width: 300px;
+         }
+        
+        div label{
+            font-size: 7px;
+            font-weight: bold;
+        }
+        
+        div{
+            opacity: 0.6;
+        }
+
+        form p div{
+            opacity: 0.5;
+        }
+        div label{
+            display: block;
+        }
+        #slika{
+            background-image: url('kartica.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: left;
+        }
+        .input{
+            border-top: hidden;
+            border-right: hidden;
+            border-left: hidden;
+            width: 250px;
+        }
+        label{
+            font-size: 10px;
+        }
+        .expiration input{
+            display: inline-block;
+            width: 25%;
+        }
+        p input label{
+            vertical-align: bottom;
+        }
+        
+        #save{
+            opacity: 0.5;
+            vertical-align: 25%;
+        }
+       #button{
+           background-color: rgb(24, 192, 24);
+           border: 0;
+           border-radius: 5%;
+           width: 100px;
+           height: 30px;
+           color: white;
+           opacity: 0.7;
+           cursor: pointer;
+       }
+     
+       
+
+    </style>
+</head>
+<body>
+    <h3>Your payment details</h3>
+    <form>
+        <p>
+            <div>
+                <label>NAME</label>
+                <input class="name input" type="text">
+            </div>
+        </p>
+
+        <p>
+            <div>
+                <label>CARD NUMBER</label>
+                <input class="card input" id="slika" type="text"></div>
+        </p>
+
+        <div class="expiration">
+            <label>EXPIRATION DATE<br></label>
+            <input class="month input" type="text" placeholder="MM">
+            <input class="year input" type="text" placeholder="YY">
+            <p>
+                <label>CVC</label>
+                <input class="cvc input" type="text" placeholder="123">
+            </p>
+        </div>
+
+        <input id="checkbox" type="checkbox">
+        <label id="save">Save my card for future purchases</label>
+
+        <p>
+            <input id="button" type="button" value="PAY NOW">
+
+       </p>
+    </form>
+</body>
+</html>
